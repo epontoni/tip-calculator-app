@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Tip calculator app</title>
+</head>
+<body>
+
+  <div class="wrapper">
+    <header class="header">
+      <a href="/">
+        <img class="header-logo" src="./images/logo.svg" alt="Splitter">
+      </a>
+    </header>
+
+    <main class="calculator">
+      <section class="calculator-panel">
+        <div class="calculator-panel-bill">
+          <label for="bill">Bill</label><br/>
+          <input id="bill" type="number">
+          <i class="icon-dollar"></i>
+        </div>
+        <div class="calculator-panel-tips">
+          <label for="tip-number">Select Tip %</label>
+          <div class="calculator-panel-tips-container">
+            <input type="button" value="5%">
+            <input type="button" value="10%">
+            <input type="button" value="15%">
+            <input type="button" value="25%">
+            <input type="button" value="50%">
+            <input id="tip-number" type="number" placeholder="Custom">
+          </div>
+        </div>
+        <div class="calculator-panel-people">
+          <label for="people">Number of People</label><br/>
+          <input type="number" id="people">
+          <i class="icon-person"></i>
+        </div>
+      </section>
+      <section class="calculator-display">
+        <div class="tip-amount">
+          <div class="tip-amount-title">
+            <h2>Tip Amount <span>/ person</span> </h2>
+          </div>
+          <div class="tip-amount-quantity">
+            <h2>$0.00</h2>  
+          </div>
+        </div>
+        <div class="total">
+          <div class="tip-total-title">
+            <h2>Total <span>/ person</span> </h2>
+          </div>
+          <div class="tip-total-quantity">
+            <h2>$0.00</h2>  
+          </div>
+        </div>
+        <div class="display-options">
+          <button>Reset</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      with ❤️ by Emanuel Pontoni 
+    </footer>
+  </div>
+
+</body>
+</html>
