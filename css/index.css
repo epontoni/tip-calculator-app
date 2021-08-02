@@ -96,7 +96,7 @@ body {
 }
 
 input {
-    border: none;
+    border: 2px solid transparent;
     background: var(--lightGrayishCyan);
     border-radius: .3rem;
     font-size: 1rem;
