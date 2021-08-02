@@ -40,7 +40,7 @@
         </div>
         <div class="calculator-panel-people">
           <label for="people">Number of People</label><br/>
-          <input type="number" id="people">
+          <input type="number" id="people" placeholder="1">
           <i class="icon-person"></i>
         </div>
       </section>
@@ -50,7 +50,7 @@
             <h2>Tip Amount <span>/ person</span> </h2>
           </div>
           <div class="tip-amount-quantity">
-            <h2>$0.00</h2>  
+            <h2 id="resultAmount">$0.00</h2>  
           </div>
         </div>
         <div class="total">
@@ -58,11 +58,11 @@
             <h2>Total <span>/ person</span> </h2>
           </div>
           <div class="tip-total-quantity">
-            <h2>$0.00</h2>  
+            <h2 id="resultTotal">$0.00</h2>  
           </div>
         </div>
         <div class="display-options">
-          <button>Reset</button>
+          <button id="reset">Reset</button>
         </div>
       </section>
     </main>
@@ -72,5 +72,6 @@
     </footer>
   </div>
 
+  <script src="js/index.js"></script>
 </body>
 </html>
